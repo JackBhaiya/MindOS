@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: mindos-frontend
+    env: node
+    repo: https://github.com/JackBhaiya/MindOS
+    branch: main
+    buildCommand: "npm install --legacy-peer-deps && npm run build"
+    startCommand: "npm start"
+    nodeVersion: "20"
